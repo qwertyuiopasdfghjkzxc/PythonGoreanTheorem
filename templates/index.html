@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                  <title>Bootstrap Example</title>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+    background-color: #bababa;
+}
+</style>
+</head>
+
+<center><h1>Current Price = $7</h1></center>
+
+<center><h2>2 for $10</h2></center>
+<center><h3>3 for $15</h2></center>
+<br>
+<br>
+
+<center>
+
+   <div class="col-sm-3 col-xs-6">
+    <center><p><strong>Blue Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='blue.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;">
+    <form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="blue" value="1" />
+        <input class="btn btn-default" type="submit" name="blue" value="2" />
+        <input class="btn btn-default" type="submit" name="blue" value="3" />
+    </form>
+  </div>
+
+
+
+
+
+  </div><div class="col-sm-3 col-xs-6">
+    <center><p><strong>Red Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='red.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;">
+    <form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="red" value="1" />
+        <input class="btn btn-default" type="submit" name="red" value="2" />
+        <input class="btn btn-default" type="submit" name="red" value="3" />
+    </form>
+  </div>
+
+
+
+
+
+  </div><div class="col-sm-3 col-xs-6">
+    <center><p><strong>Green Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='green.png') }}" alt=".img-thumbnail" style="width:140px;height:140px;"><form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="green" value="1" />
+        <input class="btn btn-default" type="submit" name="green" value="2" />
+        <input class="btn btn-default" type="submit" name="green" value="3" />
+    </form>
+  </div>
+
+
+
+
+
+  </div><div class="col-sm-3 col-xs-6">
+    <center><p><strong>Black Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='black.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;">
+    <form action = "{{url_for('Add', price=price, two=two, three=three) }}" method = "post">
+        <input class="btn btn-default" type="submit" name="black" value="1" />
+        <input class="btn btn-default" type="submit" name="black" value="2" />
+        <input class="btn btn-default" type="submit" name="black" value="3" />
+    </form>
+  </div>
+
+<br>
+
+
+<div class="col-sm-3 col-xs-6">
+    <center><p><strong>Pink Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='pink.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;"><form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="pink" value="1" />
+        <input class="btn btn-default" type="submit" name="pink" value="2" />
+        <input class="btn btn-default" type="submit" name="pink" value="3" />
+    </form>
+  </div>
+
+
+  <div class="col-sm-3 col-xs-6">
+    <center><p><strong>Green/Blue Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='greenblue.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;"><form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="greenblue" value="1" />
+        <input class="btn btn-default" type="submit" name="greenblue" value="2" />
+        <input class="btn btn-default" type="submit" name="greenblue" value="3" />
+    </form>
+  </div>
+
+  <div class="col-sm-3 col-xs-6">
+    <center><p><strong>White Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='white.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;"><form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="white" value="1" />
+        <input class="btn btn-default" type="submit" name="white" value="2" />
+        <input class="btn btn-default" type="submit" name="white" value="3" />
+    </form>
+  </div>
+
+<div class="col-sm-3 col-xs-6">
+    <center><p><strong>Other Color Spinner</strong></p>
+    <img class="img-thumbnail" src="{{ url_for('static', filename='other.jpg') }}" alt=".img-thumbnail" style="width:140px;height:140px;"><form action = "{{url_for('Add') }}" method = "post">
+        <input class="btn btn-default" type="submit" name="other" value="1" />
+        <input class="btn btn-default" type="submit" name="other" value="2" />
+        <input class="btn btn-default" type="submit" name="other" value="3" />
+    </form>
+
+  </div>
+
+  </div>
+  </div>
+    <br>
