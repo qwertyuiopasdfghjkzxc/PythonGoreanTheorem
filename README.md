@@ -8,7 +8,11 @@
 
 ### Getting Started
 
-Run:
+Install requirement by running:
+
+```pip install -r requirements.txt```
+
+After installing all requirements, simply run the command:
 
 ```python app.py```
 
