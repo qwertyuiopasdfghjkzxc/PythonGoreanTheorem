@@ -10,11 +10,11 @@
 
 Install requirement by running:
 
-```pip install -r requirements.txt```
+```$ pip install -r requirements.txt```
 
 After installing all requirements, simply run the command:
 
-```python app.py```
+```$ python app.py```
 
 And then navigate your browser to the following address:
 
